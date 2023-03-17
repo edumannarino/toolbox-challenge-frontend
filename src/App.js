@@ -1,24 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import Container from 'react-bootstrap/Container'
+import DataTable from './components/DataTable'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <Container>
+      <header>
+        <h1 className="text-center">Files Information</h1>
       </header>
-    </div>
+      <main className='pt-2'>
+        <DataTable />
+      </main>
+    </Container>
+
   );
 }
 
